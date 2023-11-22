@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_imp"
+            android:icon="@drawable/ic_imp"
+            android:title="Important Notes"
+            android:onClick="openImpNotesActivity"/>
+        <item
+            android:id="@+id/nav_updateCheck"
+            android:icon="@drawable/ic_update"
+            android:title="Check For Updates"
+            android:onClick="CheckForUpdates"/>
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Settings"
+            android:onClick="openSettingsActivity"/>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Contact Us" />
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_info"
+                android:onClick="openAboutUsActivity"
+                android:title="About Us" />
+
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.thelordtech.facultydashboard">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".hiddenNotesActivity"
+            android:label="Hidden Notes"
+            android:parentActivityName=".HomeActivity">
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Settings"
+            android:parentActivityName=".HomeActivity">
+        </activity>
+        <activity android:name=".View_Profile_Activity" />
+        <activity
+            android:name=".FacultyListActivity"
+            android:label="Faculty List"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:label="About Us"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".StarNotesActivity"
+            android:label="Important Notes"
+            android:parentActivityName=".HomeActivity" />
+        <activity android:name=".Mark_Attendance"
+            android:label="Mark Attendence">
+
+        </activity>
+        <activity android:name=".EditStudentDetails"
+            android:label="Edit Details">
+        </activity>
+        <activity android:name=".ViewStudentDetails" />
+        <activity android:name=".CourseDetails"
+            android:label="Students List"
+            android:parentActivityName=".CourseListActivity">
+        </activity>
+        <activity android:name=".CourseListActivity"
+            android:label="Course Details"
+            android:parentActivityName=".HomeActivity">
+
+        </activity>
+        <activity android:name=".History" />
+        <activity android:name=".ExistSchedule" />
+        <activity android:name=".ViewSchedule" />
+        <activity
+            android:name=".TimeTableActivity"
+            android:label="TimeTable"
+            android:parentActivityName=".HomeActivity" />
+        <activity android:name=".EditFacultyProfile" />
+        <activity android:name=".FacultyProfileActivity" />
+        <activity android:name=".ViewNoteActivity" />
+        <activity android:name=".AddNoteActivity" />
+        <activity
+            android:name=".NotesListActivity"
+            android:label="Notes"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:label="Reset Password"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Reset Password"
+            android:parentActivityName=".LoginActivity" />
+        <activity android:name=".RequestAppointmentActivity" />
+    </application>
+
+</manifest>
