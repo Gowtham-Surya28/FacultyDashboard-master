@@ -1,5 +1,6 @@
 # Faculty Dashboard
 ## Tools Used: 
+▪	Agile methodology
 ▪	Backend : Flask (Python)
 ▪	Frontend : HTML, Bootstrap CSS
 ▪	Database : sqlite3
